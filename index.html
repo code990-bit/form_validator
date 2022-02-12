@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asets/css/style.css">
+    <script src="./asets/javas.js"></script> 
+</head>
+<body>
+    <div class="column">
+        <div id="form_acc">
+            <div class="title">
+                <h2 class="title_h2">Create Accound</h2>
+            </div>
+            <div id="form_in">
+                <label for="name" class="title_na">Full Name</label>
+                <input class="tor_in" type="text" id="name" required placeholder="Full name">
+                <span id="mesage"></span>
+            </div>
+            <div id="form_in">
+                <label for="email" class="title_na">Email</label>
+                <input class="tor_in" type="text" id="email" placeholder="Email" required>
+                <span id="mesage"></span>
+            </div>
+            <div id="form_in">
+                <label for="Password" class="title_na">Password</label>
+                <input class="tor_in" type="password" id="password" placeholder="Pw six word & number"required>
+                <span id="mesage"></span>
+            </div>
+            <div id="form_in">
+                <label for="password" class="title_na">Confirm Password</label>
+                <input class="tor_in" type="password" id="password" placeholder="Confirm Password">
+                <span id="mesage"></span>
+            </div>
+            <div class="check">
+                <input type="checkbox" value="" class="check_box">nhân vào ô bạn đã đồng ý vói điều khoản của chung toi
+                   <a href="" class="link_word"> & đọc tiếp !:</a>
+            </input>
+            </div>
+            <button class="btn">
+                <a href="#" class="btn_word">Register</a>
+            </button>
+            <div class="login">
+                <a href="" class="login_a">Login</a>
+                <p class="login_p">Login If You Has Have Accound</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="./asets/javas.js"></script> 
+    <script>
+        validator({
+            form: '#form',
+            rules: [
+                validator.isRequired('#fullName'),
+                validator.isEmail('#email'),
+                validator.isPassword('#pasword'),
+
+            ]
+       })
+    </script>
+</body>
+</html>
